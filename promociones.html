@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>condiciones de promoción</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top custom-navbar">
+            <div class="container-fluid justify-content-center">
+              <img src="https://res.cloudinary.com/dowejnpvd/image/upload/v1746068378/004e0ee0-28c0-4a9b-a70c-839c76d67aee___5846d44646cb98de410f65258cc00608_pc2zt6.png" alt="logo Siman">
+              <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end custom-navbar" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">Menú promociones</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active bi bi-house-door-fill text-white" aria-current="page" href="./index.html"> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white bi bi-gift-fill" href="./promociones.html"> Detalles de promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bi bi-building-add text-white" href="./sucursales.html"> Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bi bi-telephone-fill text-white" href="./Servicios.html"> Servicios</a>
+                      </li>
+                      
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Título principal -->
+                <h2 class="text-center mb-4 fw-bold mt-3">Condiciones y Ofertas</h2>
+                
+                <!-- Acordeón -->
+                <div class="accordion" id="ofertasAccordion">
+                  <!-- Item 1: Condiciones -->
+                  <div class="accordion-item border-0 shadow-sm mb-3">
+                    <h3 class="accordion-header" id="headingCondiciones">
+                      <button class="accordion-button collapsed text-danger fw-bold py-3" type="button" 
+                              data-bs-toggle="collapse" data-bs-target="#collapseCondiciones" 
+                              aria-expanded="false" aria-controls="collapseCondiciones">
+                        Condiciones
+                      </button>
+                    </h3>
+                    <div id="collapseCondiciones" class="accordion-collapse collapse" 
+                         aria-labelledby="headingCondiciones" data-bs-parent="#ofertasAccordion">
+                      <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item border-0">Ofertas válidas hasta agotar existencias</li>
+                          <li class="list-group-item border-0">Precios especiales exclusivos para compras en línea</li>
+                          <li class="list-group-item border-0">Los descuentos no son acumulables con otras promociones</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Item 2: Catálogo -->
+                  <div class="accordion-item border-0 shadow-sm mb-3">
+                    <h3 class="accordion-header" id="headingCatalogo">
+                      <button class="accordion-button collapsed text-danger fw-bold py-3" type="button" 
+                              data-bs-toggle="collapse" data-bs-target="#collapseCatalogo" 
+                              aria-expanded="false" aria-controls="collapseCatalogo">
+                        Catálogo de productos
+                      </button>
+                    </h3>
+                    <div id="collapseCatalogo" class="accordion-collapse collapse" 
+                         aria-labelledby="headingCatalogo" data-bs-parent="#ofertasAccordion">
+                      <div class="accordion-body">
+                        <p>Descubre nuestra amplia selección de productos con precios especiales.</p>
+                        <button class="btn btn-outline-danger">Ver catálogo completo</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Item 3: Cupón -->
+                  <div class="accordion-item border-danger border-2">
+                    <h3 class="accordion-header" id="headingCupon">
+                      <button class="accordion-button collapsed text-danger fw-bold py-3" type="button" 
+                              data-bs-toggle="collapse" data-bs-target="#collapseCupon" 
+                              aria-expanded="false" aria-controls="collapseCupon">
+                        Cupón de primera compra | 10% de descuento SIMAN.COM
+                      </button>
+                    </h3>
+                    <div id="collapseCupon" class="accordion-collapse collapse" 
+                         aria-labelledby="headingCupon" data-bs-parent="#ofertasAccordion">
+                      <div class="accordion-body text-center py-4">
+                        <span class="badge bg-danger mb-3">EXCLUSIVO</span>
+                        <h4 class="fw-bold mb-3">Cupón de primera compra</h4>
+                        <p class="display-6 text-danger fw-bold mb-3">10% DE DESCUENTO</p>
+                        <p class="text-muted mb-4">Válido solo en SIMAN.COM</p>
+                        <button class="btn btn-danger btn-lg px-4">Obtener cupón</button>
+                        <p class="small text-muted mt-3 mb-0">*Aplican términos y condiciones</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Newsletter Section -->
+                <div class="col-lg-4 mb-4 ">
+                    <div class="newsletter bg-dark text-white">
+                        
+                        <img src="https://res.cloudinary.com/dowejnpvd/image/upload/v1746068378/004e0ee0-28c0-4a9b-a70c-839c76d67aee___5846d44646cb98de410f65258cc00608_pc2zt6.png" class="img-fluid" alt="logo Siman">
+                        <p class="mb-3" >Suscríbete para obtener las mejores ofertas</p>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="e-mail">
+                        </div>
+                        <button class="btn btn-danger w-100">Suscribirme</button>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4 class="footer-title">2298-3777</h4>
+                        <p >Mantente en contacto con nosotros</p>
+                        
+                        <div class="d-flex mt-3">
+                            <a href="#" class="text-dark"><i class="bi bi-google-play"></i> google play</a>
+                            <a href="#" class="text-dark"><i class="bi bi-apple"></i> Apple Store</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Corporativo Section -->
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <h4 class="footer-title">SIMAN CORPORATIVO</h4>
+                    <div class="footer-links">
+                        <a href="#">Quiénes Somos</a>
+                        <a href="#">Visión y Misión</a>
+                        <a href="#">Historia</a>
+                        <a href="#">Sucursales</a>
+                        <a href="#">Servicios</a>
+                    </div>
+                </div>
+                
+                <!-- Programas Section -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <h4 class="footer-title">PROGRAMAS</h4>
+                    <div class="footer-links">
+                        <a href="#">Monedero</a>
+                        <a href="#">Certificados de Regalo</a>
+                        <a href="#">Garantías</a>
+                        <a href="#">Siman PRO</a>
+                        <a href="#">Credísiman</a>
+                        <a href="#">Marketplace</a>
+                        <a href="#">Vende en Marketplace</a>
+                    </div>
+                </div>
+                
+                <!-- Servicio al Cliente Section -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <h4 class="footer-title">SERVICIO AL CLIENTE</h4>
+                    <div class="footer-links">
+                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Política de devoluciones</a>
+                        <a href="#">Contactenos</a>
+                        <a href="#">Seguridad del sitio</a>
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Condiciones ofertas</a>
+                        <a href="#">Derecho de Retracto</a>
+                        <a href="#">Condiciones de uso</a>
+                        <a href="#">Términos y condiciones</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2023 SIMAN. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>

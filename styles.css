@@ -1,0 +1,85 @@
+.custom-navbar {
+    background-color: rgb(168, 51, 56) !important;
+  }
+
+  .categoria-hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .categoria-hover:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  .categoria-hover img:hover {
+    filter: brightness(1.05);
+  }
+
+  .cuadricula{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .custom-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr; /* 1 columna por defecto (mobile) */
+  }
+
+  /* Tablet (768px en adelante) */
+  @media (min-width: 768px) {
+    .custom-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+  }
+
+  /* Desktop (992px en adelante) */
+  @media (min-width: 992px) {
+    .custom-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+  }
+
+  .grid-item img {
+    width: 100%;       /* Ocupa todo el ancho del contenedor */
+    height: 80%;     /* Altura fija (ajusta según necesites) */
+    object-fit: cover; /* Mantiene relación de aspecto cubriendo el espacio */
+    object-position: center; /* Centra la imagen */
+  }
+
+  .footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+.footer-title {
+    color: #d9230f;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.footer-links a {
+    color: #495057;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: #d9230f;
+}
+.newsletter {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+.app-badge {
+    height: 40px;
+    margin-right: 10px;
+}
+.divider {
+    border-top: 1px solid #dee2e6;
+    margin: 2rem 0;
+}
+
